@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Application for finding, sharing and reviewing campgrounds.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lsegg/yelp-camp.git"
@@ -18,6 +16,7 @@
   "homepage": "https://github.com/lsegg/yelp-camp#readme",
   "dependencies": {
     "ejs": "^3.1.6",
+    "ejs-mate": "^3.0.0",
     "express": "^4.17.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.12.13"
