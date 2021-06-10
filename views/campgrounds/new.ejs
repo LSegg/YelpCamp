@@ -2,7 +2,12 @@
 <div class="row">
     <h1 class="text-center">New Campground</h1>
     <div class="col-6 offset-3">
-        <form action="/campgrounds" method="POST">
+        <form
+            class="validated-form"
+            action="/campgrounds"
+            method="POST"
+            novalidate
+        >
             <div class="mb-3">
                 <label class="form-label" for="title">Title</label>
                 <input
@@ -11,18 +16,23 @@
                     id="title"
                     name="campground[title]"
                     placeholder="Campground name"
+                    required
                 />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please write a name.</div>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="location">Location</label>
-                <input
+                <input 
                     class="form-control"
                     type="text"
                     id="location"
                     name="campground[location]"
                     placeholder="Location"
-                />
-            </div>
+                    required
+                />                
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please write a location.</div>
             <div class="mb-3">
                 <label class="form-label" for="price">Campground Price</label>
                 <div class="input-group">
@@ -35,7 +45,10 @@
                         aria-label="price"
                         aria-describedby="price-label"
                         name="campground[price]"
+                        required
                     />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please write a price.</div>
                 </div>
             </div>
             <div class="mb-3">
@@ -46,7 +59,10 @@
                     id="image"
                     name="campground[image]"
                     placeholder="https://image-url.com"
+                    required
                 />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please write a URL.</div>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="description">Description</label>
@@ -57,7 +73,10 @@
                     cols="30"
                     rows="10"
                     placeholder="Write here"
+                    required
                 ></textarea>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please write a description.</div>
             </div>
             <div class="mb-3">
                 <button class="btn btn-success">Add Campground</button>

@@ -1,10 +1,12 @@
-<% layout('layouts/boilerplate') %> <% layout('layouts/boilerplate') %>
+<% layout('layouts/boilerplate') %>
 <div class="row">
     <h1 class="text-center">Edit Campground</h1>
     <div class="col-6 offset-3">
         <form
+            class="validated-form"
             action="/campgrounds/<%= campground._id %>?_method=PUT"
             method="POST"
+            novalidate
         >
             <div class="mb-3">
                 <label class="form-label" for="title">Title</label>
@@ -13,8 +15,11 @@
                     type="text"
                     id="title"
                     name="campground[title]"
-                    value="<%= campground.title %> "
+                    value="<%= campground.title %>"
+                    required
                 />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please write a name.</div>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="location">Location</label>
@@ -23,8 +28,11 @@
                     type="text"
                     id="location"
                     name="campground[location]"
-                    value="<%= campground.location %> "
+                    value="<%= campground.location %>"
+                    required
                 />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please write a location.</div>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="price">Campground Price</label>
@@ -38,7 +46,10 @@
                         aria-label="price"
                         aria-describedby="price-label"
                         name="campground[price]"
+                        required
                     />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please write a price.</div>
                 </div>
             </div>
             <div class="mb-3">
@@ -49,7 +60,10 @@
                     id="image"
                     name="campground[image]"
                     value="<%= campground.image %>"
+                    required
                 />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please write a URL.</div>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="description">Description</label>
@@ -59,7 +73,12 @@
                     name="campground[description]"
                     cols="30"
                     rows="10"
-                ><%= campground.description %></textarea>
+                    required
+                >
+<%= campground.description %></textarea
+                >
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please write a description.</div>
             </div>
             <div class="mb-3">
                 <button class="btn btn-success">Update Campground</button>
