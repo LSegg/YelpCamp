@@ -18,6 +18,9 @@ It is a site like Yelp for finding, sharing and reviewing campgrounds.
 -   [Method Override](https://www.npmjs.com/package/method-override) - Node.js module for use HTTP verbs in places where the client doesn't support it.
 -   [Mongoose](https://mongoosejs.com/) - MongoDB object data mapper modeling for Node.js.
 -   [Node.js](https://nodejs.org/en/) - JavaScript runtime.
+-   [Passport](http://www.passportjs.org/) - Simple, unobtrusive authentication middleware for Node.js.
+-   [passport-local](http://www.passportjs.org/packages/passport-local/) - Passport strategy module for authenticating with a username and password.
+-   [passport-local-mongoose](https://www.npmjs.com/package/passport-local-mongoose) - Mongoose plugin that simplifies building username and password login with Passport.
 -   [Unsplash Source API](https://source.unsplash.com/) - Simple embedding for Unsplash photos.
 
 ## Features 📋
