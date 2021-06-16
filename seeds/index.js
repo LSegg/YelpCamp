@@ -28,7 +28,8 @@ const seedDB = async () => {
             image: 'https://source.unsplash.com/collection/483251',
             price,
             description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nobis, nam vel voluptate porro tenetur deserunt consequuntur quas! Fuga, consequuntur? Natus minus nesciunt labore necessitatibus quae non quibusdam explicabo blanditiis!',
-            location: `${cities[random1000].city}, ${cities[random1000].state}`
+            location: `${cities[random1000].city}, ${cities[random1000].state}`,
+            author: '60ca5400b0308146009ee65e'
         });
         await camp.save();
     }
