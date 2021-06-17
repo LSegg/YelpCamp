@@ -1,4 +1,4 @@
-# YelpCamp
+## YelpCamp 🏕️ 
 
 This is the final project from The Web Developer Bootcamp 2021 by [Colt Steele](https://www.linkedin.com/in/coltsteele/). \
 It is a site like Yelp for finding, sharing and reviewing campgrounds.
@@ -21,6 +21,7 @@ It is a site like Yelp for finding, sharing and reviewing campgrounds.
 -   [Passport](http://www.passportjs.org/) - Simple, unobtrusive authentication middleware for Node.js.
 -   [passport-local](http://www.passportjs.org/packages/passport-local/) - Passport strategy module for authenticating with a username and password.
 -   [passport-local-mongoose](https://www.npmjs.com/package/passport-local-mongoose) - Mongoose plugin that simplifies building username and password login with Passport.
+-   [Starability.css](https://lunarlogic.github.io/starability/) - Accessible rating with animations on top.
 -   [Unsplash Source API](https://source.unsplash.com/) - Simple embedding for Unsplash photos.
 
 ## Features 📋
