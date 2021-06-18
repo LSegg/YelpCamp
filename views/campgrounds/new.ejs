@@ -6,6 +6,7 @@
             class="validated-form"
             action="/campgrounds"
             method="POST"
+            enctype="multipart/form-data"
             novalidate
         >
             <div class="mb-3">
@@ -23,16 +24,17 @@
             </div>
             <div class="mb-3">
                 <label class="form-label" for="location">Location</label>
-                <input 
+                <input
                     class="form-control"
                     type="text"
                     id="location"
                     name="campground[location]"
                     placeholder="Location"
                     required
-                />                
+                />
                 <div class="valid-feedback">Looks good!</div>
                 <div class="invalid-feedback">Please write a location.</div>
+            </div>
             <div class="mb-3">
                 <label class="form-label" for="price">Campground Price</label>
                 <div class="input-group">
@@ -52,7 +54,17 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="image">Image URL</label>
+                <label for="image" class="form-label">Upload images</label>
+                <input
+                    class="form-control"
+                    type="file"
+                    id="image"
+                    name="image"
+                    accept="image/*"
+                    required
+                    multiple
+                />
+                <!-- <label class="form-label" for="image">Image URL</label>
                 <input
                     class="form-control"
                     type="text"
@@ -62,7 +74,7 @@
                     required
                 />
                 <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please write a URL.</div>
+                <div class="invalid-feedback">Please write a URL.</div> -->
             </div>
             <div class="mb-3">
                 <label class="form-label" for="description">Description</label>

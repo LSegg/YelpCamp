@@ -25,7 +25,28 @@ const seedDB = async () => {
         const price = Math.floor(Math.random() * 20) + 10;
         const camp = new Campground({
             title: `${sample(descriptors)} ${sample(places)}`,
-            image: 'https://source.unsplash.com/collection/483251',
+            images: [
+                {
+                    url: 'https://res.cloudinary.com/lsegg/image/upload/v1624036639/YelpCamp/guervje6uz8kgzqxfpwd.jpg',
+                    filename: 'YelpCamp/guervje6uz8kgzqxfpwd'
+                },
+                {
+                    url: 'https://res.cloudinary.com/lsegg/image/upload/v1624036640/YelpCamp/ngcsayf7bhowbgdpbbsg.jpg',
+                    filename: 'YelpCamp/ngcsayf7bhowbgdpbbsg'
+                },
+                {
+                    url: 'https://res.cloudinary.com/lsegg/image/upload/v1624036641/YelpCamp/jgdc2hgbmgdy3ouvxsqz.jpg',
+                    filename: 'YelpCamp/jgdc2hgbmgdy3ouvxsqz'
+                },
+                {
+                    url: 'https://res.cloudinary.com/lsegg/image/upload/v1624036641/YelpCamp/c3mjgxycy29z4j7ozppa.jpg',
+                    filename: 'YelpCamp/c3mjgxycy29z4j7ozppa'
+                },
+                {
+                    url: 'https://res.cloudinary.com/lsegg/image/upload/v1624036644/YelpCamp/wir9ulsqup9gzsp7s4dy.jpg',
+                    filename: 'YelpCamp/wir9ulsqup9gzsp7s4dy'
+                }
+            ],
             price,
             description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nobis, nam vel voluptate porro tenetur deserunt consequuntur quas! Fuga, consequuntur? Natus minus nesciunt labore necessitatibus quae non quibusdam explicabo blanditiis!',
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
@@ -33,9 +54,9 @@ const seedDB = async () => {
         });
         await camp.save();
     }
-}
+};
 
 seedDB().then(() => {
     mongoose.connection.close();
     console.log("Database disconnected");
-})
+});
