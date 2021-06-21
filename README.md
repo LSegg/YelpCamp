@@ -17,6 +17,8 @@ It is a site like Yelp for finding, sharing and reviewing campgrounds.
 -   [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Markup language.
 -   [JavaScript](https://sass-lang.com/install) - Programming language.
 -   [JOI](https://joi.dev/) - Schema description language and data validator for JavaScript.
+-   [Mapbox](https://www.mapbox.com/) - Maps and location data tools for developers.
+-   [mapbox-sdk](https://www.npmjs.com/package/@mapbox/mapbox-sdk) - A JS SDK for working with Mapbox APIs.
 -   [Method Override](https://www.npmjs.com/package/method-override) - Node.js module for use HTTP verbs in places where the client doesn't support it.
 -   [Mongoose](https://mongoosejs.com/) - MongoDB object data mapper modeling for Node.js.
 -   [Multer](https://www.npmjs.com/package/multer) - Node.js middleware for handling multipart/form-data, which is primarily used for uploading files.
@@ -38,6 +40,11 @@ It is a site like Yelp for finding, sharing and reviewing campgrounds.
 ## Preview
 
 ## Requirements ⚙️
+
+-   A text editor like [Visual Studio Code](https://code.visualstudio.com/).
+-   A development local server such as [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+-   Free accounts for [Cloudinary](https://cloudinary.com/) and [Mapbox](https://www.mapbox.com/).
+-   A testing application like [Postman](https://www.postman.com/) is not neccesary but it is recommended for server-side request testing.
 
 ## License 📄
 

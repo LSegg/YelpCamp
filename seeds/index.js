@@ -47,10 +47,14 @@ const seedDB = async () => {
                     filename: 'YelpCamp/wir9ulsqup9gzsp7s4dy'
                 }
             ],
+            geometry: {
+                type: "Point",
+                coordinates: [-113.1331, 47.0202]
+            },
             price,
             description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nobis, nam vel voluptate porro tenetur deserunt consequuntur quas! Fuga, consequuntur? Natus minus nesciunt labore necessitatibus quae non quibusdam explicabo blanditiis!',
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
-            author: '60ca5400b0308146009ee65e'
+            author: '60ca5400b0308146009ee65e' // default user ID
         });
         await camp.save();
     }
