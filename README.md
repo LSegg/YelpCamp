@@ -13,7 +13,9 @@ It is a site like Yelp for finding, sharing and reviewing campgrounds.
 -   [EJS](https://ejs.co/) - Embedded JavaScript templating.
 -   [ejs-mate](https://www.npmjs.com/package/ejs-mate) - Template functions for the EJS template engine.
 -   [Express](http://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js.
+-   [express-mongo-sanitize](https://www.npmjs.com/package/express-mongo-sanitize) - Express 4.x middleware which sanitizes user-supplied data to prevent MongoDB Operator Injection.
 -   [express-session](https://www.npmjs.com/package/express-session) - Node.js module that creates session middleware with the given options.
+-   [Helmet](https://helmetjs.github.io/) - Middleware package that helps you secure your Express apps by setting various HTTP headers.
 -   [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Markup language.
 -   [JavaScript](https://sass-lang.com/install) - Programming language.
 -   [JOI](https://joi.dev/) - Schema description language and data validator for JavaScript.
@@ -27,6 +29,7 @@ It is a site like Yelp for finding, sharing and reviewing campgrounds.
 -   [Passport](http://www.passportjs.org/) - Simple, unobtrusive authentication middleware for Node.js.
 -   [passport-local](http://www.passportjs.org/packages/passport-local/) - Passport strategy module for authenticating with a username and password.
 -   [passport-local-mongoose](https://www.npmjs.com/package/passport-local-mongoose) - Mongoose plugin that simplifies building username and password login with Passport.
+-   [sanitize-html](https://www.npmjs.com/package/sanitize-html) - It provides a simple HTML sanitizer with a clear API.
 -   [Starability.css](https://lunarlogic.github.io/starability/) - Accessible rating with animations on top.
 -   [Unsplash Source API](https://source.unsplash.com/) - Simple embedding for Unsplash photos.
 
@@ -36,6 +39,7 @@ It is a site like Yelp for finding, sharing and reviewing campgrounds.
 -   Reviews system.
 -   User authentication and authorization.
 -   Image Upload.
+-   Interactive maps.
 
 ## Preview
 
