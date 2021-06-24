@@ -1,7 +1,10 @@
 <% layout('layouts/boilerplate') %>
+<!-- styles -->
+<link rel="stylesheet" href="/stylesheets/newAndEdit.css" />
+
 <div class="row">
     <h1 class="text-center">New Campground</h1>
-    <div class="col-6 offset-3">
+    <div class="col-md-6 offset-md-3">
         <form
             class="validated-form"
             action="/campgrounds"
@@ -90,10 +93,14 @@
                 <div class="valid-feedback">Looks good!</div>
                 <div class="invalid-feedback">Please write a description.</div>
             </div>
-            <div class="mb-3">
-                <button class="btn btn-success">Add Campground</button>
+            <div class="d-grid gap-2 mb-3">
+                <button class="btn btn-lg btn-dark">Add Campground</button>
             </div>
         </form>
-        <a href="/campgrounds">All Campgrounds</a>
+        <div class="d-grid gap-2 mb-3">
+            <a class="btn btn-sm btn-outline-dark" href="/campgrounds"
+                >Back to all Campgrounds</a
+            >
+        </div>
     </div>
 </div>
