@@ -38,7 +38,7 @@ db.once("open", () => {
 });
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT ;
 const store = MongoStore.create({
     mongoUrl: dbUrl,
     crypto: {
@@ -158,5 +158,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-    console.log('Serving on port 3000');
+    console.log(`Serving on port ${PORT}`);
 });

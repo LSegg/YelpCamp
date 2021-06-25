@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Application for finding, sharing and reviewing campgrounds.",
   "main": "app.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node app.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lsegg/yelp-camp.git"
