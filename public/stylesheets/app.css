@@ -59,7 +59,8 @@ i {
     padding: 1%;
 }
 
-.mapboxgl-popup-content a, .mapboxgl-popup-content h3 {
+.mapboxgl-popup-content a,
+.mapboxgl-popup-content h3 {
     background: #52796f;
     border-radius: 5px 5px 0 0;
     color: #ffffff;

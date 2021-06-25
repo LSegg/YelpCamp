@@ -8,6 +8,7 @@ It is a site like Yelp for finding, sharing and reviewing campgrounds.
 -   [Bootstrap v5](https://getbootstrap.com/) - CSS Framework.
 -   [Cloudinary](https://cloudinary.com/) - Image & Video Management app.
 -   [connect-flash](https://www.npmjs.com/package/connect-flash) - Node.js module that creates flash messages middleware.
+-   [connect-mongo](https://www.npmjs.com/package/connect-mongo) - MongoDB session store for Connect and Express written in Typescript.
 -   [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - Stylesheet language.
 -   [dotenv](https://www.npmjs.com/package/dotenv) - zero-dependency module that loads environment variables.
 -   [EJS](https://ejs.co/) - Embedded JavaScript templating.
