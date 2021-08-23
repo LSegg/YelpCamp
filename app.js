@@ -38,7 +38,8 @@ db.once("open", () => {
 });
 
 const app = express();
-const PORT = process.env.PORT ;
+const PORT = process.env.PORT || 3000;
+const secret = process.env.SECRET || 'thisShouldBeABetterSecret!';
 const store = MongoStore.create({
     mongoUrl: dbUrl,
     crypto: {
@@ -46,7 +47,7 @@ const store = MongoStore.create({
     },
     touchAfter: 24 * 60 * 60
 });
-const secret = process.env.SECRET || 'thisShouldBeABetterSecret!';
+
 
 store.on('error', function (e) {
     console.log('Session Store Error\n', e);
