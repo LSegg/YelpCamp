@@ -44,6 +44,12 @@ It is a site like Yelp for finding, sharing and reviewing campgrounds.
 
 ## Preview
 
+![preview home desktop](https://github.com/lsegg/yelp-camp/tree/main/public/assets/desktop_preview_0.jpg?raw=true)
+![preview campground desktop](https://github.com/lsegg/yelp-camp/tree/main/public/assets/desktop_preview_1.jpg?raw=true)
+![preview login desktop](https://github.com/lsegg/yelp-camp/tree/main/public/assets/desktop_preview_2.jpg?raw=true)
+![preview signup desktop](https://github.com/lsegg/yelp-camp/tree/main/public/assets/desktop_preview_3.jpg?raw=true)
+![preview new campground desktop](https://github.com/lsegg/yelp-camp/tree/main/public/assets/desktop_preview_4.jpg?raw=true)
+
 ## Requirements ⚙️
 
 -   A text editor like [Visual Studio Code](https://code.visualstudio.com/).
